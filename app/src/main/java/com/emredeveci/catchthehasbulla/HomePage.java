@@ -6,15 +6,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity3 extends AppCompatActivity {
+public class HomePage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_main2);
     }
     public void changeScreen(View view){
-        Intent intent = new Intent(MainActivity3.this,MainActivity2.class);
+
+        Intent intent = new Intent(HomePage.this,MainActivity.class);
+        startActivity(intent);
+
+    }
+    public void changeScreen2(View view){
+        Intent intent = new Intent(HomePage.this, InfoPage.class);
         startActivity(intent);
     }
+
 }
