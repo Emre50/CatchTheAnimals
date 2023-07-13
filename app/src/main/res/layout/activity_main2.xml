@@ -8,43 +8,55 @@
     android:background="@drawable/moon"
     >
 
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:backgroundTint="#49984D"
+
         android:layout_width="212dp"
         android:layout_height="63dp"
+        android:background="@drawable/button_background"
         android:onClick="changeScreen"
+        android:shadowColor="#B0CDFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
         android:text="Play"
-        android:textColor="#090909"
+        android:textColor="#FF4FA7"
         android:textColorHighlight="#CF1D1D"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.688"
+        app:layout_constraintVertical_bias="0.774"
+
         />
 
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
+
         android:layout_width="212dp"
         android:layout_height="63dp"
-        android:backgroundTint="#49984D"
+        android:background="@drawable/button_background"
         android:onClick="changeScreen2"
+        android:shadowColor="#B0CDFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
         android:text="Info"
-        android:textColor="#090909"
+        android:textColor="#FF4FA7"
         android:textColorHighlight="#CF1D1D"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.521" />
+        app:layout_constraintVertical_bias="0.601" />
 
     <TextView
         android:id="@+id/textView"
